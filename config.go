@@ -48,7 +48,9 @@ type API interface {
 
 // ConfigDefault the default API
 var ConfigDefault = Config{
-	EscapeHTML: true,
+	EscapeHTML:             true,
+	SortMapKeys:            true,
+	ValidateJsonRawMessage: true,
 }.Froze()
 
 // ConfigCompatibleWithStandardLibrary tries to be 100% compatible with standard library behavior
